@@ -1,0 +1,22 @@
+.copyright {
+    margin: 3em auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.lists-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-item {
+    margin: 0 10px;
+}
