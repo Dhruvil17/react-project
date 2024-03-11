@@ -93,16 +93,16 @@ const Body = () => {
             </div>
             <div className="highlight-cards">
                 <div className="highlight-card">
-                    <p>30L+</p>
-                    <p>Affiliate Marketers</p>
+                    <p className="highlight-card-line-1">30L+</p>
+                    <p className="highlight-card-line-2">Affiliate Marketers</p>
                 </div>
                 <div className="highlight-card">
-                    <p>1Cr+</p>
-                    <p>Transactions</p>
+                    <p className="highlight-card-line-1">1Cr+</p>
+                    <p className="highlight-card-line-2">Transactions</p>
                 </div>
                 <div className="highlight-card">
-                    <p>₹40 Cr+</p>
-                    <p>Paid to Users</p>
+                    <p className="highlight-card-line-1">₹40 Cr+</p>
+                    <p className="highlight-card-line-2">Paid to Users</p>
                 </div>
             </div>
             <div className="gif-component-1">
@@ -127,6 +127,7 @@ const Body = () => {
                         min={0}
                         max={30}
                         onChange={(event) => handleChange("Electronics", event)}
+                        on
                     />
                 </div>
                 <div className="slider-text">
@@ -183,7 +184,7 @@ const Body = () => {
                 <div className="rockstar-component">
                     <img src={Image3} alt="rockstar-1" />
                     <div>
-                        <p>
+                        <p className="comment">
                             "I just made a Telegram group & kept sharing deals.
                             I get good income from orders that get placed"
                         </p>
@@ -192,16 +193,12 @@ const Body = () => {
                 <div className="rockstar-component">
                     <img src={Image4} alt="rockstar-2" />
                     <div>
-                        <p>
+                        <p className="comment">
                             "EarnKaro is the best source of pocket money for
                             students like me"
                         </p>
                     </div>
                 </div>
-            </div>
-            <div className="affiliate-section">
-                <div className="affiliate-text-1">Top Recommended</div>
-                <div className="affiliate-text-2">Affiliate Programmes</div>
             </div>
         </div>
     );

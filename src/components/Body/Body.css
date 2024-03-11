@@ -1,7 +1,15 @@
 .video-component-1,
 .video-component-2,
 .video-component-3,
-.gif-component-1,
+.gif-component-1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+
 .rockstars {
     display: flex;
     flex-wrap: wrap;
@@ -9,6 +17,8 @@
     align-items: center;
     justify-content: space-evenly;
     margin-top: 2em;
+    margin-inline: auto;
+    margin: 0 2%;
 }
 
 .video-1 {
@@ -105,7 +115,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
     font-weight: 600;
     line-height: 4em;
     padding: 2em;
@@ -113,20 +123,15 @@
     width: 50em;
 }
 
-.rockstars {
-    display: flex;
-}
-
 .rockstar-component {
-    margin-top: 3em;
+    margin-top: 2em;
     box-shadow: 0px 4px 36px 2px rgba(0, 0, 0, 0.16);
-    border-radius: 2em;
     border-radius: 2em;
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: em;
+    margin-bottom: 3em;
     font-weight: 600;
     line-height: 2em;
     padding: 2em;
@@ -166,6 +171,10 @@
     height: 8em;
 }
 
+.highlight-card-line-1 {
+    font-size: 2em;
+}
+
 .sliders-profit {
     display: flex;
     justify-content: center;
@@ -173,8 +182,7 @@
 }
 
 .profits-text-1,
-.rockstars-text-1,
-.affiliate-text-1 {
+.rockstars-text-1 {
     color: #043525;
     font-weight: 600;
     text-align: center;
@@ -183,8 +191,7 @@
 }
 
 .profits-text-2,
-.rockstars-text-2,
-.affiliate-text-2 {
+.rockstars-text-2 {
     color: #043525;
     font-weight: bold;
     text-align: center;
@@ -195,7 +202,8 @@
 @media (max-width: 1000px) {
     .video-component-1,
     .video-component-2,
-    .gif-component-1 {
+    .gif-component-1,
+    .rockstars {
         flex-direction: column;
         width: 100%;
     }
@@ -250,20 +258,40 @@
     }
 
     .profits-text-1,
-    .rockstars-text-1,
-    .affiliate-text-1 {
+    .rockstars-text-1 {
         font-size: 2em;
     }
 
     .profits-text-2,
-    .rockstars-text-2,
-    .affiliate-text-2 {
+    .rockstars-text-2 {
         font-size: 1.5em;
     }
 
     .slider-component {
         width: 32em;
+        margin-bottom: 2em;
     }
+
+    .highlight-card {
+        margin: 1em 0;
+        width: 70%;
+    }
+
+    .sliders-profit {
+        font-size: 1.5em;
+    }
+
+    .highlight-card-line-1 {
+        font-size: 1.5em;
+    }
+
+    .rockstar-component {
+        margin-top: 1em;
+    }
+}
+
+.comment {
+    margin: 1em;
 }
 
 /* Media Query for smaller screens (e.g., mobile devices) */
@@ -324,6 +352,12 @@
         line-height: 2.5em;
     }
 
+    .rockstar-component {
+        margin-top: 1em;
+        width: 18em;
+        line-height: 2em;
+    }
+
     .gif-line-top,
     .gif-line-bottom {
         font-size: 1em;
@@ -334,18 +368,21 @@
     }
 
     .profits-text-1,
-    .rockstars-text-1,
-    .affiliate-text-1 {
+    .rockstars-text-1 {
         font-size: 1.25em;
     }
 
     .profits-text-2,
-    .rockstars-text-2,
-    .affiliate-text-2 {
+    .rockstars-text-2 {
         font-size: 1em;
     }
 
     .slider-component {
         width: 20em;
+        margin-bottom: 2em;
+    }
+
+    .sliders-profit {
+        font-size: 1em;
     }
 }
